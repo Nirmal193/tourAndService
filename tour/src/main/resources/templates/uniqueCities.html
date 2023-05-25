@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Unique Cities</title>
+</head>
+<body>
+<h1>Unique Cities</h1>
+<ul>
+    <li th:each="city : ${uniqueCities}" th:text="${city}"></li>
+</ul>
+</body>
+</html>

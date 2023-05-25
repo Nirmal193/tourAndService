@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sites by Country</title>
+</head>
+<body>
+<h1>Sites by Country</h1>
+<h2 th:text="${countryName}"></h2>
+<ul>
+    <li th:each="site : ${sites}" th:text="${site.name}"></li>
+</ul>
+</body>
+</html>

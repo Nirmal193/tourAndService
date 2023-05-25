@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>City List</title>
+</head>
+<body>
+<h1>City List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>City Name</th>
+        <th>Logo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="city : ${cities}">
+        <td th:text="${city.name}"></td>
+        <td>
+            <img th:src="${city.logoUrl}" alt="City Logo">
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
